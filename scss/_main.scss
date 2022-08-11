@@ -1,0 +1,103 @@
+@import "variables";
+h2{
+    margin-top: 170px;
+    text-align: center;
+}
+main{
+    nav{  
+        p{
+        color: $Color_texto;
+        }
+    }
+  
+}
+.CuadroContacto{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+}
+.FormularioContacto{
+    margin-top: 6px;
+}
+.ContactoH2{
+    @extend .CuadroContacto;
+}
+
+.RedesSocialesContacto{
+    @extend .CuadroContacto;
+    margin-top: 30px;
+    li{
+        text-decoration: none;
+    }
+}
+.FotosComprar{
+
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-items: stretch;
+    justify-content:space-between ;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px ;
+    grid-column-gap:5px ;
+    grid-template-rows: 450px 450px 450px;
+    grid-row-gap:5px ;
+}
+img{
+    transition: 0.5s;
+}
+.FotosComprar img:hover{
+    transform:scale(1.5)
+
+}
+.TituloComprar{
+    font-size: xx-large;
+}
+.Slogan{
+    margin-top: 250px;
+    font-size: x-large; 
+    margin-left: 10px;
+}
+.btn{
+    margin-left: 10px;
+}
+.BodyIndex{
+    background-color: $Color_fondo;
+}
+.BodyMenu{
+    display:inline; 
+    padding: 0px;
+    margin-right: 70px;
+        a{
+        font-size:x-large;
+    }
+}
+body{
+    background-color: $Color_fondo;
+}
+main{
+    margin-top: 150px;
+} 
+.InfoImportante{
+    div{
+        text-align: center;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    }
+    h5{
+        margin-top: 15%;
+        text-align: center;
+    }
+    h6{
+        text-align: center;
+    }
+    .letrachica{
+        font-size:smaller;
+    }
+}
+.NavFotoLibro{
+    position: relative;
+    left: 2rem ;
+    top: -2rem;
+}

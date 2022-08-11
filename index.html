@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Bolsos, Tienda, Artesanal, Arte, Mate, Libro, Cuadernos">
+        <meta name="description" content="Tienda online de Paola Blaustein, mates, bolsos, cartas, arte y magia">
+        <link rel="shortcut icon" href="imagenes/logopaolablaustein.PNG" type="image/x-icon">
+        <title>Proyecto Coder</title>
+        <script src="js/simulador.js"></script> 
+        <link rel="stylesheet" href="scss/style.css">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body class="BodyIndex">
+      <!--Menu de navegacion-->
+        <header>
+            <nav class="navbar navbar-expand-lg " >
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                      <img src="imagenes/logopaolablaustein.PNG" alt="Logo" width="41" height="47">
+                    </a>
+                  </div>
+                <div class="container-fluid">
+                  <a class="navbar-brand PaolaBlaustein" href="#">Paola Blaustein</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pagess/productos.html">Diseños</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pagess/info.html">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pagess/contacto.html">Contactanos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pagess/comprar.html">Comprar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+          <!--Carrusel de fotos-->
+            <section class="indexnav">
+                <p class="Slogan">Objetos cargados de belleza y utilidad para intervenir tu vida</p>
+                <a type="button" class="btn btn-light" href="pagess/comprar.html">Comprar</a>
+                <div id="carouselExampleCaptions" class="carousel slide NavFotoLibro CarruselIndex" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner carrusel" >
+                      <div class="carousel-item active">
+                        <img src="imagenes/Cuadernotusdesiciones-copia.jpeg" class="d-block w-100" alt="Cuaderno tus desiciones">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Cuaderno tus desiciones</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/Mate1-copia.jpeg" class="d-block w-100" alt="Mate 1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Mate mujer maravilla</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/Bolsosomosmagia-copia.jpeg" class="d-block w-100" alt="Bolso somos magia">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Bolso somos magia</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </section>
+        </main>
+        <footer>
+          <div>Diseñado por Joaquin cabaleiro</div>
+        </footer>
+        <!-- JavaScript Bundle with Popper--> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
