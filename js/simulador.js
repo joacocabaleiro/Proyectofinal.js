@@ -1,23 +1,14 @@
-let stockProductos =[{id:1, nombre: "Mate 1", tipo:"mate", cantidad: 1, descripcion:"Un mate unico.", precio: 1500, img: '/imagenes/Mate1.jpeg'},
-                    {id:2, nombre: "Mate 2", tipo:"mate", cantidad: 1, descripcion:"Un mate unico.", precio: 1500,  img: '/imagenes/materosaamarillo.jpeg'},
-                    {id:3, nombre: "Bolsa 1", tipo:"bolso", cantidad: 1, descripcion:"Para que lleves todas tus cositas", precio:3000,  img: '/imagenes/Bolsomujermaravilla.jpeg'},
-                    {id:4, nombre: "Bolsa 2", tipo:"bolso", cantidad: 1, descripcion:"Para que lleves todas tus cositas", precio: 3000,  img: '/imagenes/Bolsosomosmagia.jpeg'}, 
-                    {id:5, nombre: "Caja 1", tipo:"caja", cantidad: 1, descripcion:"Una cajita imperfecta", precio: 8500,  img: '/imagenes/Cajitaimperfecta.jpeg'},
-                    {id:6, nombre: "Caja 2", tipo:"caja", cantidad: 1, descripcion:"Otra cajita imperfecta", precio: 8500,  img: '/imagenes/Cajitaimperfecta2.jpeg'}, 
-                    {id:7, nombre: "Cartas", tipo:"cartas", cantidad: 1, descripcion:"Descubri lo que esconden", precio: 3000,  img: '/imagenes/cartasintervenituvida.jpeg'}, 
-                    {id:8, nombre: "Combo 1", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo1.jpeg'}, 
-                    {id:9, nombre: "Combo 2", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo2.jpeg'}, 
-                    {id:10, nombre: "Combo 3", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo3.jpeg'}, 
-                    {id:11, nombre: "Combo 4", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo4.jpeg'}, 
-                    {id:12, nombre: "Cuaderno", tipo:"cuaderno", cantidad: 1, descripcion:"Aca escribi tus ideitas.", precio: 1000,  img: '/imagenes/cuadernocorazon.jpeg'}]
-
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 
+const botonVaciar = document.getElementById('vaciar-carrito')
+
 const contadorCarrito = document.getElementById('contadorCarrito')
 
+const cantidad = document.getElementById('cantidad')
 const precioTotal= document.getElementById('precioTotal')
+const cantidadTotal = document.getElementById('cantidadTotal')
 
 let carrito = []
 
@@ -28,29 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-/*stockProductos.forEach((producto)=> {
-    const div =document.createElement('div')
-    div.classList.add('FotosComprar')
-    div.innerHTML = `
-    <img src=${producto.img}alt="">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.descripcion}</p>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id= "agregar ${producto.id}" class="boton-agregar">Agregar <i class fas-fa-shopping-cart"></button>
-    `
-    contenedorProductos.appendChild(div)
-
-    const boton = document.getElementById('agregar ${producto.id}')
-
-    boton.addEventListener ('click', () => {
-        agregarAlCarrito(producto.id)
-    })
-
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
 })
-
-
-
-*/
 
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
@@ -73,12 +45,21 @@ stockProductos.forEach((producto) => {
     })
 })
 
-const agregarAlCarrito = (prodId)=>{
-    const item = stockProductos.find ((prod) => prod.id ===prodId)
-    carrito.push(item)
+const agregarAlCarrito = (prodId) => {
+    const existe = carrito.some (prod => prod.id === prodId)
+    if (existe){ 
+        const prod = carrito.map (prod => {
+            if (prod.id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else { 
+        const item = stockProductos.find((prod) => prod.id === prodId)
+        carrito.push(item)
+    }
     actualizarCarrito()
-    console.log(carrito)
 }
+
 
 
 
@@ -109,6 +90,7 @@ const actualizarCarrito = () => {
 
     })
     contadorCarrito.innerText = carrito.length
+    console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
 }
 

@@ -7,10 +7,13 @@
         <meta name="keywords" content="Comprar, Bolsos, Tienda, Artesanal, Arte, Mate, Libro, Cuadernos">
         <meta name="description" content="Tienda online de Paola Blaustein, mates, bolsos, cartas, arte y magia">
         <link rel="shortcut icon" href="../imagenes/logopaolablaustein.PNG" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../scss/style.css">
-        <script defer src="../js/simulador.js"></script>
         <script defer src="../js/stock.js"></script>
         <script defer src="../js/modal.js"></script>
+        <script defer src="../js/simulador.js"></script>
         <title> Comprar </title>
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -56,7 +59,6 @@
           <!--Imagenes de los productos-->
             <h2 class="TituloComprar">Comprar</h2>
             <section class="FotosComprar" id="contenedor-productos">
-
                 <!--<img src="../imagenes/Mate1.jpeg" alt="Mate 1">
                 <img src="../imagenes/materosaamarillo.jpeg" alt="Mate Rosa">
                 <img src="../imagenes/Bolsomujermaravilla.jpeg" alt="Bolso Wonderwoman">
@@ -75,6 +77,8 @@
                 <h3>Carrito</h3>
                 <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
                 <div id="carrito-contenedor"></div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
               </div>
             </div>
         </main>

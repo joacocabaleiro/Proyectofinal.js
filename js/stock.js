@@ -1,0 +1,12 @@
+let stockProductos =[{id:1, nombre: "Mate 1", tipo:"mate", cantidad: 1, descripcion:"Un mate unico.", precio: 1500, img: '/imagenes/Mate1.jpeg'},
+                    {id:6, nombre: "Caja 2", tipo:"caja", cantidad: 1, descripcion:"Otra cajita imperfecta", precio: 8500,  img: '/imagenes/Cajitaimperfecta2.jpeg'},
+                    {id:3, nombre: "Bolsa 1", tipo:"bolso", cantidad: 1, descripcion:"Para que lleves todas tus cositas", precio:3000,  img: '/imagenes/Bolsomujermaravilla.jpeg'},
+                    {id:4, nombre: "Bolsa 2", tipo:"bolso", cantidad: 1, descripcion:"Para que lleves todas tus cositas", precio: 3000,  img: '/imagenes/Bolsosomosmagia.jpeg'}, 
+                    {id:7, nombre: "Cartas", tipo:"cartas", cantidad: 1, descripcion:"Descubri lo que esconden", precio: 3000,  img: '/imagenes/cartasintervenituvida.jpeg'},
+                    {id:2, nombre: "Mate 2", tipo:"mate", cantidad: 1, descripcion:"Un mate unico.", precio: 1500,  img: '/imagenes/materosaamarillo.jpeg'}, 
+                    {id:5, nombre: "Caja 1", tipo:"caja", cantidad: 1, descripcion:"Una cajita imperfecta", precio: 8500,  img: '/imagenes/Cajitaimperfecta.jpeg'}, 
+                    {id:8, nombre: "Combo 1", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo1.jpeg'}, 
+                    {id:9, nombre: "Combo 2", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo2.jpeg'}, 
+                    {id:10, nombre: "Combo 3", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo3.jpeg'}, 
+                    {id:11, nombre: "Combo 4", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '/imagenes/combo4.jpeg'}, 
+                    {id:12, nombre: "Cuaderno", tipo:"cuaderno", cantidad: 1, descripcion:"Aca escribi tus ideitas.", precio: 1000,  img: '/imagenes/cuadernocorazon.jpeg'}]
