@@ -6,7 +6,7 @@ let stockProductos =[{id:1, nombre: "Mate 1", tipo:"mate", cantidad: 1, descripc
                     {id:2, nombre: "Mate 2", tipo:"mate", cantidad: 1, descripcion:"Un mate unico.", precio: 1500,  img: '../imagenes/materosaamarillo.jpeg'}, 
                     {id:5, nombre: "Caja 1", tipo:"caja", cantidad: 1, descripcion:"Una cajita imperfecta", precio: 8500,  img: '../imagenes/Cajitaimperfecta.jpeg'}, 
                     {id:8, nombre: "Combo 1", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/combo1.jpeg'}, 
-                    {id:9, nombre: "Combo 2", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/combo2.jpeg'}, 
-                    {id:10, nombre: "Combo 3", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/combo3.jpeg'}, 
-                    {id:11, nombre: "Combo 4", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/combo4.jpeg'}, 
+                    {id:9, nombre: "Combo 2", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/Combo2.jpeg'}, 
+                    {id:10, nombre: "Combo 3", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/Combo3.jpeg'}, 
+                    {id:11, nombre: "Combo 4", tipo:"combo", cantidad: 1, descripcion:"Para que no te falte nada, todo el combo.", precio: 11000,  img: '../imagenes/Combo4.jpeg'}, 
                     {id:12, nombre: "Cuaderno", tipo:"cuaderno", cantidad: 1, descripcion:"Aca escribi tus ideitas.", precio: 1000,  img: '../imagenes/cuadernocorazon.jpeg'}]
