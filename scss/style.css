@@ -59,9 +59,8 @@ main nav p {
   margin-left: 40px;
   margin-right: 40px;
   justify-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -69,10 +68,10 @@ main nav p {
   display: grid;
   -ms-grid-columns: 360px 360px 360px 360px;
       grid-template-columns: 360px 360px 360px 360px;
-  grid-column-gap: 5px;
+  grid-column-gap: 50px;
   -ms-grid-rows: 450px 450px 450px;
       grid-template-rows: 450px 450px 450px;
-  grid-row-gap: 5px;
+  grid: row gap 5px;
 }
 
 img {

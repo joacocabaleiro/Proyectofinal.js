@@ -36,13 +36,13 @@ main{
     margin-left: 40px;
     margin-right: 40px;
     justify-items: stretch;
-    justify-content:space-between ;
+    justify-content:space-around ;
     align-items: center;
     display: grid;
     grid-template-columns: 360px 360px 360px 360px ;
-    grid-column-gap:5px ;
+    grid-column-gap:50px ;
     grid-template-rows: 450px 450px 450px;
-    grid-row-gap:5px ;
+    grid: row gap 5px ;
 }
 img{
     transition: 0.5s;
